@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+
+button.accordion.active,
+button.accordion:hover {
+
+    background-color: #ddd;
+}
+
+
+button.accordion:after {
+
+/* Unicode character for "plus" sign
+(+) is '\02795' */ 
+
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+
+button.accordion.active:after {
+
+/* Unicode character for "minus" sign
+(-) is '\2796' */ 
+
+    content: "\2796";
+}
+
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px;
+}
+
+</style>
+</head>
+<body style="background-color:grey;">
+
+<h2 style="font-family:FORTE;">24/7 HEALING❤</h2>
+
+<p>Welcome to the world of healing. </p>
+
+<p style="font-family: 'Times New Roman', Times, serif;"> You are one step closer to healing ,Here choose what can we do for you.</p>
+
+<button class="accordion"><b>Share your story</b>
+</button>
+
+<div class="panel">
+
+<td><textarea name="summary"rows="10"cols="50"</textarea></textarea><br>
+<br>
+<li>
+<button type="submit"class="btn btn-primary"><a href="mailto:0781119889">whatsapp</a></button></li>
+<br>
+<li>
+<button type="submit"class="btn btn-primary"><a href="https://www.facebook.com/profile.php?id=100011407535151">facebook</a></button></li>
+<br>
+<li>
+<button type="submit"class="btn btn-primary"><a href="mailto:mbasareboloke@gmail.com">send an email</a></button></li>
+
+</div>
+
+<button class="accordion"><b>motivationa Video</b></button>
+<div class="panel">
+    <ul>
+        <li>
+<a href="file:///C:/Users/KEOIKANTSE/Desktop/Motase%20app/YouCut_20201022_130227994.mp4">Unbroken</a>
+<video width="500"height="200"loop autoplay="true"src="YouCut_20201022_130227994.mp4"></video></li>
+<br>
+<li>
+<a href="file:///C:/Users/KEOIKANTSE/Desktop/Motase%20app/YouCut_20201022_132450218.mp4">time wait for no man</a>
+<video width="500"height="200"loop autoplay="true"src="YouCut_20201022_132450218.mp4"></video></li>
+
+</div>
+
+<button class="accordion"><b>motivational  stories</b>
+</button>
+<div class="panel">
+
+
+    <li>
+        <a href="https://www.google.com/search?client=ms-android-samsung-gj-rev1&sxsrf=ALeKk01Soij3iMvqJePoF7C8Q0g5vMF04Q:1603399211079&q=Steve+Harvey+jump+Quote&sa=X&ved=2ahUKEwic_6LDh8nsAhVXUxUIHc_wBIQQ1QIwIHoECBEQAQ&biw=360&bih=464&dpr=1.5" target="_blank">steve harvey</a>
+        <br>
+        </li>
+        
+        <br>
+        <li>
+        <a href="https://www.awakenthegreatnesswithin.com/35-inspirational-tyler-perry-quotes-on-success/"target_="blank">Tylor Perry</a>
+        </li>
+
+</div>
+
+<script>
+
+var acc = document
+.getElementsByClassName("accordion");
+
+var i;
+
+for (i = 0; i < acc.length; i++) {
+ acc[i].onclick = function(){
+  this.classList.toggle("active");
+  this.nextElementSibling.classList
+  .toggle("show");
+  }
+}
+
+</script>
+
+
+
+<a href="index.html"><b>EXIT</b></a>
+
+</body>
+</html>
